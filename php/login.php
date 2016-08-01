@@ -2,12 +2,12 @@
 
 $msg = "";
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    $name = $_GET["name"];
+    $username = $_GET["username"];
     $password = md5($_GET["password"]);
-	 if ($name == '' || $password == '') {
+	 if ($username == '' || $password == '') {
         $msg = "You must enter all fields";
     } else {
-        $sql = "SELECT * FROM members WHERE name = '$name' AND password = '$password'";
+        $sql = "SELECT * FROM members WHERE username = '$username' AND password = '$password'";
         $query = mysql_query($sql);
 
         if ($query === false) {
