@@ -2,8 +2,8 @@
 
 $msg = "";
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    $username = $_GET["username"];
-    $password = md5($_GET["password"]);
+    $username = $_GET["Username"];
+    $password = md5($_GET["Password"]);
 	 if ($username == '' || $password == '') {
         $msg = "You must enter all fields";
     } else {
