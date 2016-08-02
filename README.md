@@ -1,5 +1,4 @@
-# Login-Form
-<h2>MySQLI Login Form</h2>
+#MySQLI Login Form
 <h3>Test Login:</h3>
 <h4>Username: Test</h4>
 <h4>Password: 12345</h4>
