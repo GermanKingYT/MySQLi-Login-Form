@@ -79,8 +79,8 @@ if(isset($_POST["submit"]))
         # Show this Code
         echo "Login Successful!<br>";
 
-        ##################################################################
+##################################################################
 
-        # Close the Databank again
+        # Close the Database again
         mysql_close($con);
 ?>
