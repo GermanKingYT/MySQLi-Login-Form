@@ -36,7 +36,7 @@ if($check_user>0)
 
     $sel_user = "UPDATE login_usernamen SET letzter_login=NOW()
                  WHERE id=".$_SESSION["user"]["id"];
-                 mysql_query($_sql);
+                 mysql_query($sel_user);
                  }
              else
                  {
