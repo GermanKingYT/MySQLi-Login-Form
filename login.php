@@ -47,7 +47,9 @@
 
         if($check_user > 0)
         {
-        echo "Login Successful.<br>";
+        ?> 
+        <script>alert("Login Successful");</script> 
+        <?php
 
         $_SESSION[‘username’]=$_username;
 
@@ -64,7 +66,9 @@
                     }
                 else
                     {
-                     echo "Wrong Login details.<br>";
+                    ?> 
+                    <script>alert("Wrong Login Credentials!");</script> 
+                    <?php
                     }
                 } 
         # User Logged in ???
@@ -79,7 +83,9 @@
 
             # If the User is Logged in
             # Show this Code
-            echo "Login Successful!<br>";
+            ?> 
+            <script>alert("You did it!");</script> 
+            <?php
 
 ##################################################################
 
